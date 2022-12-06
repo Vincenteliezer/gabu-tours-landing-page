@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import NavBar from "../components/NavBar";
-import bgHome from "/public/bgHome.jpg";
+import gabu4 from "../public/gabu4.jpg";
+import bgHome from "../public/bgHome.jpg";
 // import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -22,11 +23,50 @@ export default function Home() {
           </h4>
           <div className="h-16 bg-[#d8a670] w-[300px] sm:w-[400px] md:w-[600px] flex justify-between pl-3 items-center transform -translate-x-1/2 left-[50%] absolute -bottom-8">
             <h5 className="text-white text-xl font-bold">EMAIL US</h5>
-            <h5 className="text-xl font-bold h-full bg-[#8a6747] px-3 flex items-center text-white cursor-pointer hover:bg-[#725131]">SEND</h5>
+            <h5 className="text-xl font-bold h-full bg-[#8a6747] px-3 flex items-center text-white cursor-pointer hover:bg-[#725131]">
+              SEND
+            </h5>
           </div>
         </div>
 
-        <div className=""></div>
+        <div className="max-w-7xl mx-auto mt-12 px-3">
+          <h5 className="text-2xl font-bold text-[#e49a4b]">ABOUT US</h5>
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-6">
+            <Image alt="" src={gabu4} className="h-" />
+            <div>
+              <h5 className="text-lg text-justify text-gray-800">
+                Established in 2006, Gabuh Travel and Tours, is a full service
+                travel, tour operator and destination management company which
+                offers a wide array of services to cater the needs of travel
+                connoisseurs. We put forward unique solutions, paying careful
+                attention to each client’s individual needs – to deliver
+                successful and memorable destination management service that is
+                reliable, safe, affordable and enjoyable for all clients.
+              </h5>
+            </div>
+          </div>
+          <h5 className="text-2xl font-bold text-[#e49a4b] mt-4">OUR SERVICES</h5>
+          <div className="grid grid-cols-1 md:grid-cols-6 place-items-center mt-4 gap-4">
+            <div className="h-48 border border-[#e49a4b] w-full hover:bg-[#e49a4b] hover:text-white flex justify-center items-center">
+              <h5 className="">Airport Transfers</h5>
+            </div>
+            <div className="h-48 border border-[#e49a4b] w-full hover:bg-[#e49a4b] hover:text-white flex justify-center items-center">
+              <h5>Hotel Transfers</h5>
+            </div>
+            <div className="h-48 border border-[#e49a4b] w-full hover:bg-[#e49a4b] hover:text-white flex justify-center items-center">
+              <h5>Cab Services</h5>
+            </div>
+            <div className="h-48 border border-[#e49a4b] w-full hover:bg-[#e49a4b] hover:text-white flex justify-center items-center">
+              <h5>Corporate Tours</h5>
+            </div>
+            <div className="h-48 border border-[#e49a4b] w-full hover:bg-[#e49a4b] hover:text-white flex justify-center items-center">
+              <h5>Car Hire</h5>
+            </div>
+            <div className="h-48 border border-[#e49a4b] w-full hover:bg-[#e49a4b] hover:text-white flex justify-center items-center">
+              <h5>Delivery Services</h5>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
