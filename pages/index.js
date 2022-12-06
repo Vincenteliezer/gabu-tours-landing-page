@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import NavBar from "../components/NavBar";
+import bgHome from "/public/bgHome.jpg";
 // import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,11 +14,19 @@ export default function Home() {
       </Head>
 
       <main className="select-none text-base">
-        <div className="h-[350px] overflow-hidden px-3 md:px-0 relative md:h-[500px] bg-[url(/bgHome.jpg)] bg-cover bg-center bg-gray-600">
+        <div className="h-[350px] md:px-0 relative md:h-[500px] bg-[url(/bgHome.jpg)] bg-cover bg-center bg-gray-600">
           <NavBar />
 
-          <h4 className="text-white  text-6xl font-bold text-center w-full top-[40%] md:top-[50%] absolute">GABU TRAVEL & TOURS</h4>
+          <h4 className="text-white text-6xl font-bold text-center w-full top-[40%] md:top-[50%] absolute">
+            GABU TRAVEL & TOURS
+          </h4>
+          <div className="h-16 bg-[#d8a670] w-[300px] sm:w-[400px] md:w-[600px] flex justify-between pl-3 items-center transform -translate-x-1/2 left-[50%] absolute -bottom-8">
+            <h5 className="text-white text-xl font-bold">EMAIL US</h5>
+            <h5 className="text-xl font-bold h-full bg-[#8a6747] px-3 flex items-center text-white cursor-pointer hover:bg-[#725131]">SEND</h5>
+          </div>
         </div>
+
+        <div className=""></div>
       </main>
     </div>
   );

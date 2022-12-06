@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between max-w-7xl mx-auto py-5 z-50">
+    <div className="flex justify-between max-w-7xl mx-auto py-5 px-3 lg:px-0 z-50">
       <h5 className="text-xl font-bold text-white">GABU TOURS</h5>
       <div className="hidden md:block">
       <ul className="flex space-x-4 ">
