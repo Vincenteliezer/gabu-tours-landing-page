@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import NavBar from "../components/NavBar";
 import gabu4 from "../public/gabu4.jpg";
-import bgHome from "../public/bgHome.jpg";
+
 import {
   IconName,
   MdAirportShuttle,
@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
 
       <main className="select-none text-base">
-        <div className="w-full sticky top-0 bg-gradient-to-l from-[#8f6b49] to-[#ffca90] z-50 ">
+        <div className="w-full shadow-md sticky top-0 bg-gradient-to-l from-[#8f6b49] to-[#ffca90] z-50 ">
           <NavBar />
         </div>
         <div className="h-[350px] md:px-0 relative md:h-[500px] bg-[url(/bgHome.jpg)] bg-cover bg-center bg-gray-600">
@@ -67,7 +67,7 @@ export default function Home() {
           <h5 className="text-2xl font-bold text-white mt-16 bg-[#8a6747] w-fit px-3 py-1" id="services">
             OUR SERVICES
           </h5>
-          <div className="grid grid-cols-2 md:grid-cols-6 place-items-center mt-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center mt-4 gap-4">
             <div className="h-48 border border-[#e49a4b] w-full hover:bg-[#e49a4b] hover:text-white flex flex-col justify-center items-center">
               <MdAirportShuttle className="h-12 w-12" />
               <h5 className="">Airport Transfers</h5>
@@ -99,7 +99,7 @@ export default function Home() {
             </h5>
             <div className="h-96 bg-slate-400 rounded-2xl mt-4 bg-[url(/bgDiscover.jpg)] text-center overflow-hidden flex justify-center items-center bg-cover bg-center ">
               <h5 className="text-white font-bold text-2xl md:text-4xl">
-                PLAN YOUR TRAVEL WITH GABUH TRAVEL & TOURS
+                PLAN YOUR TRAVEL WITH GABUH TOURS & TRAVEL
               </h5>
             </div>
             <h5 className="text-2xl font-bold text-[#e49a4b] mt-6">
