@@ -65,7 +65,7 @@ export default function Home() {
             <Image alt="" src={gabu4} className="h-" />
             <div>
               <h5 className="text-lg text-justify text-gray-800 mb-4">
-                Established in 2006, Gabuh Travel and Tours, is a full service
+                Established in 2018, Gabuh Travel and Tours, is a full service
                 travel, tour operator and destination management company which
                 offers a wide array of services to cater the needs of travel
                 connoisseurs. We put forward unique solutions, paying careful
