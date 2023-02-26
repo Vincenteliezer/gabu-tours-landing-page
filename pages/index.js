@@ -14,6 +14,7 @@ import {
   MdOutlineDeliveryDining,
 } from "react-icons/md";
 import Footer from "../components/Footer";
+import Modal from "../components/Modal";
 
 export default function Home() {
   return (
@@ -75,9 +76,11 @@ export default function Home() {
               </h5>
               <hr />
               <div className=" mt-4 w-full flex justify-center md:justify-end">
-                <p className="bg-[#e49a4b] w-fit px-8 py-2 font-bold text-white cursor-pointer active:scale-75 hover:shadow-md">
+                {/* <p className="bg-[#e49a4b] w-fit px-8 py-2 font-bold text-white cursor-pointer active:scale-75 hover:shadow-md">
                   BOOK
                 </p>
+         */}
+                <Modal />
               </div>
             </div>
           </div>
